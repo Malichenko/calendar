@@ -1,0 +1,54 @@
+@import '../../../styles/palette';
+
+.calendar {
+	width: 60%;
+	height: 75vh;
+	background-color: $primary;
+	box-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.4);
+	border-radius: 1rem;
+	overflow: hidden;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		padding-left: 2rem;
+		background-color: $secondary;
+		align-items: center;
+		height: 6rem;
+	}
+
+	&__switcher {
+		display: flex;
+		align-items: center;
+	}
+
+	&__month {
+		display: flex;
+		align-items: center;
+		margin-right: 1rem;
+	}
+	
+	&__month-title {
+		font-size: 1.6rem;
+		margin: 0 1rem;
+	}
+
+	&__datepicker {
+		height: 6rem;
+		min-width: 6rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-left: 1px solid $primary;
+		position: relative;
+	}
+
+	&__days {
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+		grid-gap: 1px;
+		height: calc(100% - 6rem);
+		background-color: $secondary;
+	}
+}

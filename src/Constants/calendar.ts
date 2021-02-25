@@ -1,0 +1,1 @@
+export const CALENDAR_CEIL_COUNT = 42;
